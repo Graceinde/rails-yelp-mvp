@@ -1,12 +1,12 @@
-<%= form_for(@restaurant) do |f| %>
+<%= form_for(@restaurant, @review) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 
-  <%= f.label :adress %>
-  <%= f.text_field :adress %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
 
-  <%= f.label :number %>
-  <%= f.text_field :number %>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
 
   <%= f.label :category %>
   <%= f.text_field :category %>

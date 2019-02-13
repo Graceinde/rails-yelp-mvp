@@ -1,7 +1,10 @@
-<h1><%= @restaurant.title %></h1>
+<h1><%= @restaurant.name %></h1>
 <div>
-  <p><%= @restaurant.adress %></p>
-  <p><%= @restaurant.number %></p>
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
   <p><%= @restaurant.category %></p>
 </div>
-<a href="/restaurants">Back to list</a>
+<%= link_to "Back", restaurants_path %> ||
+<%= link_to("Delete", restaurant_path(@restaurant), method: :delete)%> ||
+<%= link_to("Review", new_restaurant_review_path(@restaurant%>
+
